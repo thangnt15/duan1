@@ -1,4 +1,52 @@
-<div id="main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+  <title>Document</title>
+</head>
+<style>
+  a {
+    display: block;
+  }
+</style>
+<body>
+    <div id="control">
+      <div class="control-left">
+        <a href="" style="text-decoration: none; font-size: 30px; color: #c7fa7c; font-weight: bold; line-height: 80px;">
+          Bảng điều khiển
+        </a>
+        <div class="line">
+
+        </div>
+        <div class="option">
+          <h2 style="margin: 20px 0;">
+            Chức năng
+          </h2>
+          <div class="line">
+          </div>
+          <div class="options" style="margin: 20px 0;">
+            <a href="">Quản lý danh mục </a>
+            <a href="">Quản lý hàng hóa </a>
+            <a href="">Quản lý tài khoản </a>
+            <a href="">Danh sách đơn hàng </a>
+            <a href="">Quản lý bình luận </a>
+            <a href="">Quản lý thống kê </a>
+          </div>
+          <div class="line">
+          
+          </div>
+        </div>
+        <a class="tt" href="">
+          Quay lại giao diện
+        </a>
+        <div class="line">
+          
+        </div>
+      </div>
+    </div>
+    <div id="main">
       <div class="card-top">
         <div class="card-left">
           <h2>
@@ -21,7 +69,7 @@
         <div class="card-main-left">
           <h3>Ảnh minh họa</h3>
           <div class="line" style="border: 1px solid #a8a8a8"></div>
-          <img src="img/imgdemo.jpg" alt="">
+          <img src="../img/imgdemo.jpg" alt="">
           
           <p style="margin-bottom: 42px;">
             Thời đại cuộc sống hiện nay, vấn đề được mọi người quan tâm nhất đó là “Thời trang”. 
@@ -45,8 +93,11 @@
             trên đà phát triển như vũ bão của Việt Nam hiện nay. Do đó, chúng em đã vận dụng ngôn ngữ 
             PHP, MYSQL và công cụ Visual Studio Code, XAMPP, Diagram để xây dựng Website thời trang.
           </p>
-          <img src="img/php (1).svg" alt="">
+          <img src="../img/php (1).svg" alt="">
           <div class="line" style="border: 1px solid #a8a8a8"></div>
         </div>
       </div>
     </div>
+    
+</body>
+</html>

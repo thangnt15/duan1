@@ -14,7 +14,7 @@
 <body>
     <div id="control">
       <div class="control-left">
-        <a href="" style="text-decoration: none; font-size: 25px; color: #c7fa7c; font-weight: bold; line-height: 80px;">
+        <a href="" style="text-decoration: none; font-size: 30px; color: #c7fa7c; font-weight: bold; line-height: 80px;">
           Bảng điều khiển
         </a>
         <div class="line">

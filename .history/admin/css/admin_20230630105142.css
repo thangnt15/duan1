@@ -1,12 +1,12 @@
 /* Reset Default */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
   width: 1310px;
 }
@@ -34,7 +34,7 @@ body {
   margin-right: 15px;
 }
 .tt {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: #f8f9fc;
   margin: 20px 0;
@@ -54,6 +54,7 @@ body {
   height: 110px;
   background-color: #e8e8e8;
   box-shadow: -7px 0px 3px 0px #4e73df;
+        
 }
 .card-left h2 {
   margin-left: 30px;
@@ -91,12 +92,13 @@ body {
   justify-content: center;
 }
 /* .card-main-left {
-
+  
 } */
 .card-main-left p {
   width: 480px;
   color: #858796;
   font-size: 18px;
+
 }
 .card-main-left img {
   width: 400px;
@@ -106,7 +108,7 @@ body {
   align-items: center;
   margin-left: 40px;
 }
-.card-main-left h3 {
+.card-main-left h3{
   line-height: 60px;
   color: #4e73df;
   font-size: 25px;
@@ -117,7 +119,7 @@ body {
   color: #858796;
   font-size: 18px;
 }
-.card-main-right h3 {
+.card-main-right h3{
   line-height: 60px;
   color: #4e73df;
   font-size: 25px;
