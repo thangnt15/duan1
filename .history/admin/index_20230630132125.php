@@ -11,9 +11,10 @@
             case 'addsp':
                 include "sanpham/add.php";
                 break;
-            case 'qldm':
-                include "danhmuc/quanlyloaihang.php";
+            case 'reload':
+                include "admin";
                 break;
+                
             
             default:
                 include "home.php";

@@ -27,7 +27,7 @@
           <div class="line">
           </div>
           <div class="options" style="margin: 20px 0;">
-            <a href="index.php?act=qldm">Quản lý danh mục </a>
+            <a href="index.php?act=adddm">Quản lý danh mục </a>
             <a href="index.php?act=addsp">Quản lý hàng hóa </a>
             <a href="index.php?act=dskh">Quản lý tài khoản </a>
             <a href="index.php?act=adddm">Danh sách đơn hàng </a>

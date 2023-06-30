@@ -11,9 +11,8 @@
             case 'addsp':
                 include "sanpham/add.php";
                 break;
-            case 'qldm':
-                include "danhmuc/quanlyloaihang.php";
-                break;
+            case 'q'
+                
             
             default:
                 include "home.php";

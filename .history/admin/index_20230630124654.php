@@ -6,13 +6,7 @@
         $act=$_GET['act'];
         switch ($act) {
             case 'adddm':
-                include "danhmuc/add.php";
-                break;
-            case 'addsp':
-                include "sanpham/add.php";
-                break;
-            case 'qldm':
-                include "danhmuc/quanlyloaihang.php";
+                include "danhmuc"
                 break;
             
             default:
