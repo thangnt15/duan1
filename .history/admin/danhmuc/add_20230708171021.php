@@ -8,27 +8,20 @@
 </head>
 <body>
     <div class="container">
-        <form action="index.php?act=adddm" method="post">
+        <form action="index.php?act=add">
         <h1>
             Thêm danh mục loại hàng
         </h1>
         <div class="form2">
-            <input type="text" placeholder="Tên danh mục" required name="tenloai">
+            <input type="text" placeholder="Tên danh mục" required>
         </div>
         <div class="submit">
         <input type="submit" value="Thêm mới" name="themmoi" >
-        <input type="reset" value="Nhập lại" name="nhaplai" >
+        <input type="reset" value="Nhập lại" name="themmoi" >
         </div>
         <div class="ds">
             <a href="index.php?act=qldm"><input type="button" value="Danh sách"></a>
         </div>
-
-        <div class="tbadd">
-        <?php 
-            if(isset($thongbao)&&($thongbao!="")) echo $thongbao;
-        ?>
-        </div>
-
         </form>
     </div>
 </body>

@@ -35,9 +35,6 @@
     cursor: pointer;
     color: #fd8d5d;
   }
-  .ds {
-    margin: 30px 40px;
-  }
   
   .ds input {
   
@@ -50,7 +47,4 @@
   .ds input:hover {
     cursor: pointer;
     color: #fd8d5d;
-  }
-  .tbadd {
-    margin: 30px 40px;
   }

@@ -23,11 +23,9 @@
             <a href="index.php?act=qldm"><input type="button" value="Danh sách"></a>
         </div>
 
-        <div class="tbadd">
-        <?php 
+        <?php st
             if(isset($thongbao)&&($thongbao!="")) echo $thongbao;
         ?>
-        </div>
 
         </form>
     </div>

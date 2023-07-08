@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="index.php?act=adddm" method="post">
+        <form action="index.php?act=adddm">
         <h1>
             Thêm danh mục loại hàng
         </h1>
@@ -22,13 +22,6 @@
         <div class="ds">
             <a href="index.php?act=qldm"><input type="button" value="Danh sách"></a>
         </div>
-
-        <div class="tbadd">
-        <?php 
-            if(isset($thongbao)&&($thongbao!="")) echo $thongbao;
-        ?>
-        </div>
-
         </form>
     </div>
 </body>

@@ -10,8 +10,7 @@
                 if(isset($_POST['themmoi'])&&($_POST['themmoi'])) {
                     $tenloai=$_POST['tenloai'];
                     $sql="insert into danhmuc(name) values('$tenloai')";
-                    pdo_execute($sql);
-                    $thongbao="Thêm thành công";
+
                 }
                 include "danhmuc/add.php";
                 break;
