@@ -18,19 +18,19 @@
                     <th>Tên loại</th>
                     <th>Xử lý</th>
                 </tr>
-                </thead>
                 <?php
                 
                     foreach ($listdanhmuc as $danhmuc){
-                        extract($danhmuc);
+                        ex
                         echo '<tr>
-                        <td>'.$id.'</td>
-                        <td>'.$name.'</td>
+                        <td>Mã loại</td>
+                        <td>Tên loại</td>
                         <td>Xử lý</td>
                     </tr>';
                     }
 
                 ?>
+                </thead>
         </table>
         <a href="index.php?act=adddm"><input type="button" value="Nhập thêm"></a>
     </div>

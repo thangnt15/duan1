@@ -19,8 +19,7 @@
                 include "sanpham/add.php";
                 break;
             case 'qldm':
-                $sql="select * from danhmuc order by name";
-                $listdanhmuc=pdo_query($sql);
+                pdo_qu($sql);
                 include "danhmuc/quanlyloaihang.php";
                 break;
             

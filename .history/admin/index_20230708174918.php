@@ -20,7 +20,7 @@
                 break;
             case 'qldm':
                 $sql="select * from danhmuc order by name";
-                $listdanhmuc=pdo_query($sql);
+                $dspdo_query($sql);
                 include "danhmuc/quanlyloaihang.php";
                 break;
             

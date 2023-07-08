@@ -18,7 +18,6 @@
                     <th>Tên loại</th>
                     <th>Xử lý</th>
                 </tr>
-                </thead>
                 <?php
                 
                     foreach ($listdanhmuc as $danhmuc){
@@ -26,11 +25,12 @@
                         echo '<tr>
                         <td>'.$id.'</td>
                         <td>'.$name.'</td>
-                        <td>Xử lý</td>
+                        <td><a href="'.$suadm.'"><input id="edit" type="button" value="Sửa"></a> <a href="'.$xoadm.'"><input id="del" type="button" value="Xóa" ></a></td>
                     </tr>';
                     }
 
                 ?>
+                </thead>
         </table>
         <a href="index.php?act=adddm"><input type="button" value="Nhập thêm"></a>
     </div>

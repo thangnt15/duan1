@@ -18,7 +18,6 @@
                     <th>Tên loại</th>
                     <th>Xử lý</th>
                 </tr>
-                </thead>
                 <?php
                 
                     foreach ($listdanhmuc as $danhmuc){
@@ -31,6 +30,7 @@
                     }
 
                 ?>
+                </thead>
         </table>
         <a href="index.php?act=adddm"><input type="button" value="Nhập thêm"></a>
     </div>

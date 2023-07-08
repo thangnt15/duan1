@@ -18,19 +18,8 @@
                     <th>Tên loại</th>
                     <th>Xử lý</th>
                 </tr>
+                <?php_ini_loaded_file()?>
                 </thead>
-                <?php
-                
-                    foreach ($listdanhmuc as $danhmuc){
-                        extract($danhmuc);
-                        echo '<tr>
-                        <td>'.$id.'</td>
-                        <td>'.$name.'</td>
-                        <td>Xử lý</td>
-                    </tr>';
-                    }
-
-                ?>
         </table>
         <a href="index.php?act=adddm"><input type="button" value="Nhập thêm"></a>
     </div>
