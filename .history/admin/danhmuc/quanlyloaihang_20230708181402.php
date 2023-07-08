@@ -11,7 +11,7 @@
         <h1>
             Quản lý danh mục
         </h1>
-        <table class="content-table">
+        <table class="content-table" s>
             <thead>
                 <tr>
                     <th>Mã loại</th>

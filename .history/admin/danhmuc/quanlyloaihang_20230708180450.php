@@ -28,7 +28,7 @@
                         echo '<tr>
                         <td>'.$id.'</td>
                         <td>'.$name.'</td>
-                        <td><a href="'.$suadm.'"><input id="edit" type="button" value="Sửa"></a> <a href="'.$xoadm.'"><input id="del" type="button" value="Xóa" ></a></td>
+                        <td>Xử lý</td>
                     </tr>';
                     }
 

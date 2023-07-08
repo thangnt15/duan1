@@ -25,9 +25,7 @@
                 break;
             case 'xoadm':
                 if(isset($_GET['id'])&&($_GET['id']>0)) {
-
-                    $sql="delete from danhmuc where id=".$_GET['id'];
-                    pdo_execute($sql);
+                    
                 }
                 $sql="select * from danhmuc order by name";
                 $listdanhmuc=pdo_query($sql);
