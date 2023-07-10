@@ -25,7 +25,7 @@
         </div>
         <div class="submit">
         <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id; ?>">
-        <input type="submit" value="Update" name="update" >
+        <a href="index.php?act=qldm"><input type="submit" value="Update" name="update" ></a>
         <input type="reset" value="Nhập lại" name="nhaplai" >
         </div>
         <div class="ds">

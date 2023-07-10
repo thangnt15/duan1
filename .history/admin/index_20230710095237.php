@@ -43,13 +43,6 @@
                 break;
 
             case 'updatedm':
-                if(isset($_POST['update'])&&($_POST['update'])) {
-                    $tenloai=$_POST['tenloai'];
-                    $id=$_POST['id'];
-                    $sql="update danhmuc set name='".$tenloai."' where id=".$id;
-                    pdo_execute($sql);
-                    $thongbao="Update thành công";
-                }
                 $sql="select * from danhmuc order by id desc";
                 $listdanhmuc=pdo_query($sql);
                 include "danhmuc/quanlyloaihang.php";

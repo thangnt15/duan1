@@ -46,9 +46,9 @@
                 if(isset($_POST['update'])&&($_POST['update'])) {
                     $tenloai=$_POST['tenloai'];
                     $id=$_POST['id'];
-                    $sql="update danhmuc set name='".$tenloai."' where id=".$id;
+                    $sql="insert into danhmuc(name) values('$tenloai')";
                     pdo_execute($sql);
-                    $thongbao="Update thành công";
+                    $thongbao="Thêm thành công";
                 }
                 $sql="select * from danhmuc order by id desc";
                 $listdanhmuc=pdo_query($sql);

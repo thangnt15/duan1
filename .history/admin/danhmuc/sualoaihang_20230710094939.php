@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="index.php?act=updatedm" method="post">
+        <form action="index.php?act=adddm" method="post">
         <h1>
             Cập nhật danh mục loại hàng
         </h1>
@@ -24,7 +24,7 @@
             <input type="text" placeholder="Tên danh mục" required name="tenloai" value="<?php if(isset($name)&&($name!="")) echo $name; ?>">
         </div>
         <div class="submit">
-        <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id; ?>">
+        <input type="hidden" name="">
         <input type="submit" value="Update" name="update" >
         <input type="reset" value="Nhập lại" name="nhaplai" >
         </div>

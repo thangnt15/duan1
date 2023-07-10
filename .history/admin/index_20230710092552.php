@@ -19,7 +19,7 @@
                 include "sanpham/add.php";
                 break;
             case 'qldm':
-                $sql="select * from danhmuc order by id desc";
+                $sql="select * from danhmuc order name";
                 $listdanhmuc=pdo_query($sql);
                 include "danhmuc/quanlyloaihang.php";
                 break;
@@ -29,31 +29,11 @@
                     $sql="delete from danhmuc where id=".$_GET['id'];
                     pdo_execute($sql);
                 }
-                $sql="select * from danhmuc order by id desc";
+                $sql="select * from danhmuc order id desc";
                 $listdanhmuc=pdo_query($sql);
                 include "danhmuc/quanlyloaihang.php";
-                break;
-            
-            case 'suadm':
-                if(isset($_GET['id'])&&($_GET['id']>0)){
-                    $sql="select * from danhmuc where id=".$_GET['id'];
-                    $dm=pdo_query_one($sql);
-                }
-                include "danhmuc/sualoaihang.php";
                 break;
 
-            case 'updatedm':
-                if(isset($_POST['update'])&&($_POST['update'])) {
-                    $tenloai=$_POST['tenloai'];
-                    $id=$_POST['id'];
-                    $sql="update danhmuc set name='".$tenloai."' where id=".$id;
-                    pdo_execute($sql);
-                    $thongbao="Update thành công";
-                }
-                $sql="select * from danhmuc order by id desc";
-                $listdanhmuc=pdo_query($sql);
-                include "danhmuc/quanlyloaihang.php";
-                break;
 
             default:
                 include "home.php";

@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="index.php?act=updatedm" method="post">
+        <form action="index.php?act=adddm" method="post">
         <h1>
             Cập nhật danh mục loại hàng
         </h1>
