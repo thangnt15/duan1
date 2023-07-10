@@ -67,10 +67,10 @@
                         }else {
                         
                         }
-                        $timetao = time();
-                        $ngaytao = date('Y-m-d H:i:s',$timetao);
+                        // $timetao = time();
+                        $ngaytao = date('Y-m-d H:i:s');
                         $timesua = time();
-                        $ngaysua = date('Y-m-d H:i:s',$timesua);
+                        $ngaysua = date('Y-m-d H:i:s');
                         insert_sanpham($tensp,$giacu,$giamoi,$hinh,$mota,$ngaytao,$ngaysua,$iddm);
                        $thongbao="Thêm thành công";
                 }

@@ -67,10 +67,10 @@
                         }else {
                         
                         }
-                        $timetao = time();
-                        $ngaytao = date('Y-m-d H:i:s',$timetao);
-                        $timesua = time();
-                        $ngaysua = date('Y-m-d H:i:s',$timesua);
+                        // $timetao = time();
+                        $ngaytao = date('Y-m-d');
+                        // $timesua = time();
+                        $ngaysua = date('Y-m-d');
                         insert_sanpham($tensp,$giacu,$giamoi,$hinh,$mota,$ngaytao,$ngaysua,$iddm);
                        $thongbao="Thêm thành công";
                 }
@@ -113,7 +113,7 @@
                         update_sanpham($id,$tenloai);
                         $thongbao="Update thành công";
                     }
-                    $listsanpham=loadall_sanpham("",0);
+                    $listsanpham=loadall_sanpham();
                     include "sanpham/quanlyhoanghoa.php";
                     break;
             
