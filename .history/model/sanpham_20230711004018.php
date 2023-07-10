@@ -11,10 +11,7 @@ function update_sanpham($id,$tenloai){
 function loadall_sanpham($kyw,$iddm){
     $sql = "select * from sanpham where 1";
     if($kyw!="") {
-        $sql.=" and name like '%".$kyw."%'";
-    }
-    if($iddm>0) {
-        $sql.=" and iddm ='".$iddm."'";
+        $sql.=" and name like %";
     }
     $sql.= " order by id desc";
   $listsanpham=  pdo_query($sql);

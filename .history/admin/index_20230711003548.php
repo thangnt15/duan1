@@ -79,15 +79,11 @@
                     break;
                 
                 case 'qlsp':
-                    if(isset($_POST['listok'])&&($_POST['listok'])){
-                        $kyw=$_POST['kyw'];
-                        $iddm=$_POST['iddm'];
-                    }else {
-                        $kyw="";
-                        $iddm=0;
+                    if(isset($_POST['themmoi'])&&($_POST['themmoi'])){
+                        
                     }
                     $listdanhmuc= loadall_danhmuc();
-                    $listsanpham=loadall_sanpham($kyw,$iddm);
+                    $listsanpham=loadall_sanpham();
                     include "sanpham/quanlyhanghoa.php";
                     break;
                 case 'xoasp':

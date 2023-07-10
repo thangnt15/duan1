@@ -11,23 +11,8 @@
         <h1>
             Quản lý sản phẩm
         </h1>
-        <div class="sr-box">
-            <form action="index.php?act=qlsp" method="post" >
-                <input type="text" name="kyw" placeholder="Tìm sản phẩm" style="width: 300px; height: 33px; border-radius: 10px;">
-                <select name="iddm" style="width: 100px;
-  height: 33px;
-  border-radius: 10px;">
-                    <option value="0" selected>All</option>
-                    <?php
-                    foreach ($listdanhmuc as $danhmuc) {
-                        extract($danhmuc);
-                        echo '<option value="'.$id.'">'.$name.'</option>';
-                    }
-                    ?>
-                    
-                </select>
-                <input type="submit" name="listok" value="Go" style="width: 50px; height: 33px; border-radius: 10px;">
-            </form>
+        <div class="">
+
         </div>
 
 

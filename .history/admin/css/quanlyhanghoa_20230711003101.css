@@ -46,5 +46,7 @@
   background-color: #4e73df;
 }
 .sr-box form input:hover {
-  cursor: pointer;
+  width: 100px;
+  height: 33px;
+  border-radius: 10px;
 }

@@ -84,7 +84,7 @@
                         $iddm=$_POST['iddm'];
                     }else {
                         $kyw="";
-                        $iddm=0;
+                        $iddm=$_POST['iddm'];
                     }
                     $listdanhmuc= loadall_danhmuc();
                     $listsanpham=loadall_sanpham($kyw,$iddm);
