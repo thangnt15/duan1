@@ -3,13 +3,10 @@ function insert_sanpham($tensp,$giacu,$giamoi,$hinh,$mota,$ngaytao,$ngaysua,$idd
     $sql = "insert into sanpham(name,giacu,giamoi,img,mota,ngaytao,ngaysua,iddm) values('$tensp','$giacu','$giamoi','$hinh','$mota','$ngaytao','$ngaysua','$iddm')";
     pdo_execute($sql);
 }
-function update_sanpham($id,$iddm,$tensp,$giacu,$giamoi,$hinh,$mota,$ngaytao,$ngaysua){
-    if($hinh!=="")
-    $sql="update sanpham set iddm='".$iddm."',name='".$tensp."',giacu='".$giacu."',giamoi='".$giamoi."',img='".$hinh."',mota='".$mota."',ngaytao='".$ngaytao."',ngaysua='".$ngaysua."' where id=".$id;
-    else 
-    $sql="update sanpham set iddm='".$iddm."',name='".$tensp."',giacu='".$giacu."',giamoi='".$giamoi."',mota='".$mota."',ngaytao='".$ngaytao."',ngaysua='".$ngaysua."' where id=".$id;
+function update_sanpham($id,$tenloai){
+    $sql = "update sanpham set name='".$tenloai."' where id=".$id;
     pdo_execute($sql);
- }
+}
 
 function delete_sanpham($id){
     $sql="delete from sanpham where id=".$id;

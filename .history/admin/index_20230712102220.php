@@ -131,7 +131,7 @@
                 
                         }
                         $listdanhmuc= loadall_danhmuc();
-                        $listsanpham= loadall_sanpham("",0);
+                        $listsanpham= loadall_sanpham"",0();
                         include "sanpham/quanlyhanghoa.php";
                         break;
             

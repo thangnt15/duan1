@@ -3,13 +3,12 @@
         extract($sanpham);
     }
 
-    $hinhpath="../upload/".$img;
-        if(is_file($hinhpath)){
-    $hinh="<img src='".$hinhpath."' height='100%' width='100%'> ";
-        }else{
-    $hinh="no photo";
-}
-?>
+    if(is_file($hinhpath)) {
+        $hinh="<img src='".$hinhpath."' height='80px'>";
+    } else {
+        $hinh="No photo";
+    }
+
 ?>
 
 
@@ -32,19 +31,19 @@
     
         <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
         <div class="form5">
-        Danh mục:<select name="iddm">
-            <option value="0" selected>Tất cả</option>
-            <?php
-            foreach ($listdanhmuc as $danhmuc) {
-               if($danhmuc['id']==$iddm) $s="selected"; else $s="";
-                echo '<option value="'.$danhmuc['id'].'"'.$s.'>'.$danhmuc['name'].'</option>';
-            }
-            ?>
-            
-        </select>
+            Danh mục: <select name="iddm" style="width: 100px; height: 33px; border-radius: 10px;">
+                    <option value="0" selected>All</option>
+                    <?php
+                    foreach ($listdanhmuc as $danhmuc) {
+                        extract($danhmuc);
+                        echo '<option value="'.$id.'">'.$name.'</option>';
+                    }
+                    ?>
+                    
+                </select>
         </div>
         <div class="form2">
-            <input type="text" name="tensp" placeholder="Tên sản phẩm" value="<?=$name?>">
+            <input type="text" name="tensp" placeholder="Tên sản phẩm" value="<?php$name?>">
         </div>
         <div class="form2">
             <input type="text" name="giacu" placeholder="Giá cũ" value="<?=$giacu?>">
@@ -61,11 +60,9 @@
         <div class="form9 ">
             <textarea name="mota" placeholder="Mô tả"><?=$mota?></textarea>
             
-            
         </div>
-        <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id;?>">
         <div class="ac" style="display: flex; gap: 20px;">
-            <input class="add" type="submit" name="capnhat" value="Cập nhật">
+            <input class="add" type="submit" name="themmoi" value="Cập nhật">
             <a href="index.php?act=qlsp"><input type="button"  class="list" value="Danh sách"></a>
         </div>
 

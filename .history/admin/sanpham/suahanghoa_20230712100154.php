@@ -60,12 +60,11 @@
         </div>
         <div class="form9 ">
             <textarea name="mota" placeholder="Mô tả"><?=$mota?></textarea>
-            
+            <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id;?>">
             
         </div>
-        <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id;?>">
         <div class="ac" style="display: flex; gap: 20px;">
-            <input class="add" type="submit" name="capnhat" value="Cập nhật">
+            <input class="add" type="submit" name="themmoi" value="Cập nhật">
             <a href="index.php?act=qlsp"><input type="button"  class="list" value="Danh sách"></a>
         </div>
 

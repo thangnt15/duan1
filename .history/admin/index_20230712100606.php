@@ -127,11 +127,11 @@
                             $timesua = time();
                             $ngaysua = date('Y-m-d H:i:s',$timesua);
                             update_sanpham($id,$iddm,$tensp,$giacu,$giamoi,$hinh,$mota,$ngaytao,$ngaysua);
-                            $thongbao="Cập nhật thành công";
+                            $thongbao="cập nhật thành công";
                 
                         }
                         $listdanhmuc= loadall_danhmuc();
-                        $listsanpham= loadall_sanpham("",0);
+                        $listsanpham= loadall_sanpham();
                         include "sanpham/quanlyhanghoa.php";
                         break;
             

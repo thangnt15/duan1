@@ -32,7 +32,7 @@
     
         <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
         <div class="form5">
-        Danh mục:<select name="iddm">
+            Danh mục:<select name="iddm">
             <option value="0" selected>Tất cả</option>
             <?php
             foreach ($listdanhmuc as $danhmuc) {
@@ -61,11 +61,9 @@
         <div class="form9 ">
             <textarea name="mota" placeholder="Mô tả"><?=$mota?></textarea>
             
-            
         </div>
-        <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id;?>">
         <div class="ac" style="display: flex; gap: 20px;">
-            <input class="add" type="submit" name="capnhat" value="Cập nhật">
+            <input class="add" type="submit" name="themmoi" value="Cập nhật">
             <a href="index.php?act=qlsp"><input type="button"  class="list" value="Danh sách"></a>
         </div>
 
