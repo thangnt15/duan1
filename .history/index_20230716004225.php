@@ -44,7 +44,7 @@
                     $dsdm = loadall_danhmuc();
                     $dssp = loadall_sanpham($kyw, $iddm);
         
-                    include "view/sanPham.php";
+                    include "../views/sanPham.php";
                     break;
             case 'search_by_image':
         
@@ -90,7 +90,7 @@
                     $file_display_image = $target_file;
         
                 include "./view/sanPham.php";
-                break;
+                    break;
             default: 
                 include "view/home.php";
                 break;

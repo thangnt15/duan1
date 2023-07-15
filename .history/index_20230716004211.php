@@ -30,7 +30,7 @@
                     include "view/chitiet.php";
                 }
                 break;
-            case 'sanpham':
+                case 'sanpham':
                     if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
                         $kyw = $_POST['kyw'];
                     } else {
@@ -44,9 +44,9 @@
                     $dsdm = loadall_danhmuc();
                     $dssp = loadall_sanpham($kyw, $iddm);
         
-                    include "view/sanPham.php";
+                    include "../views/sanPham.php";
                     break;
-            case 'search_by_image':
+                case 'search_by_image':
         
                     $target_dir = "../search_by_image/";
                     $file_extension = pathinfo($_FILES['fileToUpload']['name'], PATHINFO_EXTENSION);
@@ -89,8 +89,8 @@
         
                     $file_display_image = $target_file;
         
-                include "./view/sanPham.php";
-                break;
+                    include "../views/sanPham.php";
+                    break;
             default: 
                 include "view/home.php";
                 break;

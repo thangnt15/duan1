@@ -35,7 +35,7 @@ function loadall_sanpham_with_keep($keep) {
 
 //sp noi bat
 function loadall_sanpham_top(){
-    $sql= "select * from sanpham where 1 order by luotxem desc limit 0,6";
+    $sql= "select * from sanpham where 1 order by luotxem desc limit 0,8";
     $listsanpham= pdo_query($sql);
    return $listsanpham;
 }

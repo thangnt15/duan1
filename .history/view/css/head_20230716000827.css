@@ -78,7 +78,7 @@ p span {
   width: 1000px;
 }
 .menu_head ul {
-  width: 800px;
+  width: 900px;
   text-align: center;
   padding-left: 0;
   margin-top: 0;
@@ -132,7 +132,7 @@ nav > ul > li:hover > a {
   display: flex;
 }
 .mega-menu .item {
-  margin: 0px -50px;
+  margin: 0px -110px;
 }
 .mega-menu .item img {
   width: 100%;

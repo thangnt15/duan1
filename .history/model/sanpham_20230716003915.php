@@ -21,7 +21,7 @@ function delete_sanpham($id){
 }
 //sp moi nhat
 function loadall_sanpham_home(){
-    $sql = "select * from sanpham where 1 order by id desc limit 0,9";
+    $sql = "select * from sanpham where 1 order by id desc limit 0,8";
    $listsanpham= pdo_query($sql);
    return $listsanpham;
 }
@@ -35,7 +35,7 @@ function loadall_sanpham_with_keep($keep) {
 
 //sp noi bat
 function loadall_sanpham_top(){
-    $sql= "select * from sanpham where 1 order by luotxem desc limit 0,6";
+    $sql= "select * from sanpham where 1 order by luotxem desc limit 0,8";
     $listsanpham= pdo_query($sql);
    return $listsanpham;
 }
