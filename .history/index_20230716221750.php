@@ -89,7 +89,7 @@
         
                     $file_display_image = $target_file;
         
-                include "view/sanPham.php";
+                include "/view/sanPham.php";
                 break;
             default: 
                 include "view/home.php";
