@@ -89,7 +89,9 @@
                         
                         <form action="index.php?act=sanpham" method="post">
                         <input type="text" placeholder="Search" class="input" name="kyw">
-                        
+                        <div class="xyz">
+                            <i class="fa fa-search" aria-hidden="true" name="timkiem" ></i>
+                        </div>
                         </form>
                         <?php
                         if(isset($_POST['kyw'])&&($_POST['kyw']!="")){
@@ -137,9 +139,9 @@
                     </ul>
                 </div>  
                 <?php }else{?>  
-                    <div class="abc shop_cart" style="margin-top: 20px;">
+                    <div class="abc shop_cart">
                     <ul>
-                        <li style=""><a href="index.php?act=viewcart"> <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </a></li>
+                        <li><a href="index.php?act=viewcart"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </a></li>
                     </ul>
                 </div>
                 <div class="abc login">

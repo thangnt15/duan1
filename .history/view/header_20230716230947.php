@@ -137,9 +137,9 @@
                     </ul>
                 </div>  
                 <?php }else{?>  
-                    <div class="abc shop_cart" style="margin-top: 20px;">
+                    <div class="abc shop_cart">
                     <ul>
-                        <li style=""><a href="index.php?act=viewcart"> <i class="fa fa-shopping-cart" aria-hidden="true" ></i> </a></li>
+                        <li><a href="index.php?act=viewcart"> <i class="fa fa-shopping-cart" aria-hidden="true" style=""></i> </a></li>
                     </ul>
                 </div>
                 <div class="abc login">

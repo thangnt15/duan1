@@ -167,8 +167,8 @@ nav > ul > li:hover > a {
   margin-top: 30px;
 }
 .right_head .abc input {
-  /* margin-right: 105px; */
-  margin-top: -20px;
+  margin-right: 105px;
+  margin-top: -60px;
   height: 30px;
   width: 150px;
   border-radius: 10px;
