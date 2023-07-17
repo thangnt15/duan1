@@ -68,9 +68,9 @@ $up_luot_xem=up_luot_xem($luotxem,$id);
           <div class="color-container">
             <h3 class="title">Color</h3>
             <div class="colors">
-            
+            // <span class="color" primary="#f84848" color="Red"></span>
               <span class="color" primary="#fff" color="White"></span>
-              
+              <span class="color" primary="#29b864" color="Green"></span>
               <span class="color" primary="#444" color="Black"></span>
             </div>
           </div>
