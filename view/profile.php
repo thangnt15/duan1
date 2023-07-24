@@ -43,7 +43,7 @@
                                 <span class="text">Đổi mật khẩu</span>
                             </a></li>
                         <?php if ($vaitro==1){ ?>
-                        <li><a href="../admin/index.php">
+                        <li><a href="./admin/index.php">
                                 <span class="icon"><i class="fas fa-user-lock"></i></span>
                                 <span class="text">Đăng nhập admin</span>
                             </a></li>
