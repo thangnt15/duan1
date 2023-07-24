@@ -2,9 +2,11 @@
     include "model/pdo.php";
     include "model/sanpham.php";
     include "model/danhmuc.php";
+    include "model/taikhoan.php";
     include "view/header.php";
     include "global.php";
 
+    
     $spnew=loadall_sanpham_home();
     $dsdm=loadall_danhmuc();
     $dstop = loadall_sanpham_top();
@@ -91,6 +93,48 @@
         
                 include "view/sanPham.php";
                 break;
+                case 'profile':
+                    include "view/profile.php";
+                    break;
+                
+                case 'editPass':
+                    include "view/editPass.php";
+                    break;
+                        // case 'thanhtoan':
+                        //     include "thanhtoan.php";
+                        // break;
+                case 'edit_name':
+                    if (isset($_POST['suatk']) && ($_POST['suatk'])) {
+                            $user = $_POST['user'];
+                            $id = $_POST['id'];
+                            function update_user($id, $user)
+                            {
+                                $sql = "update taikhoan set user='" . $user . "' where id=" . $id;
+                                pdo_execute($sql);
+                            }
+                            function checkuser($user)
+                            {
+                                $sql = "select * from taikhoan where user='" . $user . "'";
+                                $sp = pdo_query_one($sql);
+                                return $sp;
+                            }
+                            $_SESSION['user'] = checkuser($user);
+            
+                            // header('loaction: index.php?act=edit_name');
+                    }
+                    include "view/editName.php";
+                    break;
+                case 'edit_dress':
+                    if (isset($_POST['them']) && ($_POST['them'])) {
+                            $dress = $_POST['dress'];
+                            $id = $_POST['id'];
+            
+                            update_dress($id, $dress);
+                            $_SESSION['user'] = checkuser($user, $pass);
+                            header('Location:index.php?edit_dress');
+                    }
+                    include "view/editAddress.php";
+                    break;
             default: 
                 include "view/home.php";
                 break;
