@@ -2,6 +2,7 @@
     include "../model/pdo.php";
     include "../model/danhmuc.php";
     include "../model/sanpham.php";
+    include "../model/taikhoan.php";
     include "header.php";
 
     if(isset($_GET['act'])) {
@@ -135,7 +136,26 @@
                         include "sanpham/quanlyhanghoa.php";
                         break;
             
-
+    //qltk
+    case 'qltk':
+        include "taikhoan/quanlykhachhang.php";
+        break;
+    case 'xoatk':
+        if(isset($_GET['id'])&&($_GET['id']>0)){
+            function deletetk($id){
+                $sql = "delete from taikhoan where id=".$id;
+                pdo_execute($sql);
+              }
+            deletetk($_GET['id']);
+        }
+        function loadall_taikhoan(){
+            $sql="select * from taikhoan order by id desc";
+            $listtaikhoan=pdo_query($sql);
+            return $listtaikhoan;
+        }
+        $listtaikhoan= loadall_taikhoan();
+        include "taikhoan/quanlykhachhang.php";
+        break;
             default:
                 include "home.php";
                 break;
@@ -144,11 +164,6 @@
         include "home.php";
     }
 
-
-
-
-
-    
     include "footer.php"
 
 ?>
