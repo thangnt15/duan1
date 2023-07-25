@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/quanlytaikhoan.css">
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <h1>Quản lý khách hàng</h1>
     <table class="content-table">
         <thead>
@@ -65,7 +65,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-        </div>
+
     </body>
 
     </html>

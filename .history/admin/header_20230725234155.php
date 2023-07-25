@@ -20,7 +20,7 @@ a {
     <div id="control">
         <div class="control-left">
             <a href="index.php"
-                style="text-decoration: none; font-size: 25px; color: #c7fa7c; font-weight: bold; line-height: 80px; width: 200px;">
+                style="text-decoration: none; font-size: 25px; color: #c7fa7c; font-weight: bold; line-height: 80px; w">
                 Bảng điều khiển
             </a>
             <div class="line">

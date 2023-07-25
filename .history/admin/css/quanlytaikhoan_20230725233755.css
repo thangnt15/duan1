@@ -1,4 +1,9 @@
-.container h1{
+body {
+    max-width: 1250px;
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+  }
+.container h1 {
     color: #5a5c69;
     margin: 30px 40px;
   }
@@ -7,7 +12,7 @@
     margin: 45px 0px;
     /* margin-left: 1px; */
     /* font-size: 0.9em; */
-    width: 1150px;
+    width: 1000px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -19,7 +24,7 @@
     font-weight: bold;
   }
   .content-table thead th {
-      color: white;
+    color: white;
   }
   
   .content-table th,
@@ -32,7 +37,7 @@
   }
   
   .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid  #4e73df;
+    border-bottom: 2px solid #4e73df;
   }
   
   .container a input {
@@ -44,5 +49,8 @@
     cursor: pointer;
     color: #dddddd;
     background-color: #4e73df;
+  }
+  .sr-box form input:hover {
+    cursor: pointer;
   }
   

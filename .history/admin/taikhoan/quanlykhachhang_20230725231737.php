@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/quanlytaikhoan.css">
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <h1>Quản lý khách hàng</h1>
     <table class="content-table">
         <thead>
@@ -46,8 +45,11 @@
                         <td>'.$email.'</td>
                         <td>'.$dress.'</td>
                         <td>'.$tell.'</td>
-                        <td>'.$vaitro.'</td>
-                        <td><a href="'.$suatk.'"><input id="edit" type="button" value="Sửa"></a> <a href="'.$xoatk.'"><input id="del" type="button" value="Xóa" ></a></td>
+                         <td>'.$vaitro.'</td>
+                        <td>
+                        <a id="edit" href="'.$suatk.'">Sửa</a>
+                        <a id="del" href="'.$xoatk.'" onclick="return confirm(Bạn có chắc chắn muốn xóa sản phẩm này hay không?);">Xóa</a>
+                    </td>
                     </tr>';
                     }
                     ?>
@@ -65,7 +67,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-        </div>
-    </body>
 
-    </html>
+    
+</body>
+</html>

@@ -1,4 +1,8 @@
-.container h1{
+body {
+    max-width: 1250px;
+    font-family: "Poppins", sans-serif;
+  }
+.container h1 {
     color: #5a5c69;
     margin: 30px 40px;
   }
@@ -19,7 +23,7 @@
     font-weight: bold;
   }
   .content-table thead th {
-      color: white;
+    color: white;
   }
   
   .content-table th,
@@ -32,7 +36,7 @@
   }
   
   .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid  #4e73df;
+    border-bottom: 2px solid #4e73df;
   }
   
   .container a input {
@@ -44,5 +48,8 @@
     cursor: pointer;
     color: #dddddd;
     background-color: #4e73df;
+  }
+  .sr-box form input:hover {
+    cursor: pointer;
   }
   

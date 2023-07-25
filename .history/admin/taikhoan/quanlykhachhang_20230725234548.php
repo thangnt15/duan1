@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/quanlytaikhoan.css">
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <h1>Quản lý khách hàng</h1>
     <table class="content-table">
         <thead>
@@ -46,8 +46,8 @@
                         <td>'.$email.'</td>
                         <td>'.$dress.'</td>
                         <td>'.$tell.'</td>
-                        <td>'.$vaitro.'</td>
-                        <td><a href="'.$suatk.'"><input id="edit" type="button" value="Sửa"></a> <a href="'.$xoatk.'"><input id="del" type="button" value="Xóa" ></a></td>
+                         <td>'.$vaitro.'</td>
+                        <td><a href="'.$suatk.'"><input id="edit" type="button" value="Sửa"></a> <a href="'.$xoasp.'"><input id="del" type="button" value="Xóa" ></a></td>
                     </tr>';
                     }
                     ?>
@@ -65,7 +65,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-        </div>
+
     </body>
 
     </html>
