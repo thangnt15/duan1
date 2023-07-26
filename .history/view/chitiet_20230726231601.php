@@ -56,7 +56,7 @@ $up_luot_xem=up_luot_xem($luotxem,$id);
               <h1 class="big">'.$name.'</h1>
               <span class="new">new</span>
             </div>
-            <div class="small"><del class="smalll">'.number_format($giacu).' VNĐ</del><span class="small">'.number_format($giamoi).' VNĐ</span></div>
+            <div class="small"><del class="small" style>'.number_format($giacu).' VNĐ</del><span class="small">'.number_format($giamoi).' VNĐ</span></div>
             <!-- <h3 class="small">120.000 VNĐ</h3> -->
           </div>
           <div class="description">
