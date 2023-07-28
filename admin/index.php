@@ -156,6 +156,48 @@
         $listtaikhoan= loadall_taikhoan();
         include "taikhoan/quanlykhachhang.php";
         break;
+
+
+        case 'suatk':
+            if(isset($_GET['id'])&&($_GET['id']>0)){
+                function loadone_taikhoan($id){
+                    $sql = "select * from taikhoan where id=".$id;
+                    $sp= pdo_query_one($sql);
+                      return $sp;
+                    }
+                    $sp=loadone_taikhoan($_GET['id']);
+                }
+            include "taikhoan/suataikhoan.php";
+            break;
+
+        case 'updatetk':
+            if(isset($_POST['capnhat'])&&($_POST['capnhat'])) {
+                $id=$_POST['id'];
+                $user=$_POST['user'];
+                $pass=$_POST['pass'];
+                $hoten=$_POST['hoten'];
+                $email=$_POST['email'];
+                $dress=$_POST['dress'];
+                $tell=$_POST['tell'];
+                // $vaitro=$_POST['vaitro'];
+                function update_taikhoan($id,$user,$pass,$hoten,$email,$dress,$tell){
+                     $sql="update taikhoan set user='".$user."', pass='".$pass."', hoten='".$hoten."', email='".$email."', dress='".$dress."', tell='".$tell."' where id=".$id;   
+                     pdo_execute($sql);
+                }
+                update_taikhoan($id,$user,$pass,$hoten,$email,$dress,$tell);
+                $thongbao="Update thành công";
+                
+                function loadall_taikhoan(){
+                    $sql="select * from taikhoan order by id desc";
+                    $listtaikhoan=pdo_query($sql);
+                    return $listtaikhoan;
+                }
+            }
+            
+             $listtaikhoan=loadall_taikhoan();
+            include "taikhoan/quanlykhachhang.php";
+            break;
+
             default:
                 include "home.php";
                 break;
