@@ -93,48 +93,46 @@
         
                 include "view/sanPham.php";
                 break;
-                case 'profile':
+            case 'profile':
                     include "view/profile.php";
                     break;
-                
-                case 'editPass':
-                    include "view/editPass.php";
-                    break;
-                        // case 'thanhtoan':
-                        //     include "thanhtoan.php";
-                        // break;
-                case 'edit_name':
-                    if (isset($_POST['suatk']) && ($_POST['suatk'])) {
-                            $user = $_POST['user'];
-                            $id = $_POST['id'];
-                            function update_user($id, $user)
-                            {
-                                $sql = "update taikhoan set user='" . $user . "' where id=" . $id;
+
+            case 'edit_taikhoan':
+                        if(isset($_GET['id'])&&($_GET['id']>0)){
+                            function loadone_taikhoan($id){
+                                 $sql = "select * from taikhoan where id=".$id;
+                                 $sp= pdo_query_one($sql);
+                                 return $sp;
+                                 }
+                                $sp=loadone_taikhoan($_GET['id']);
+                            }
+                        
+                        if(isset($_POST['capnhat'])&&($_POST['capnhat'])) {
+                            $id=$_POST['id'];
+                            $user=$_POST['user'];
+                            $pass=$_POST['pass'];
+                            $hoten=$_POST['hoten'];
+                            $email=$_POST['email'];
+                            $dress=$_POST['dress'];
+                            $tell=$_POST['tell'];
+                            // $vaitro=$_POST['vaitro'];
+                            function update_taikhoan($id,$user,$pass,$hoten,$email,$dress,$tell){
+                                 $sql="update taikhoan set user='".$user."', pass='".$pass."', hoten='".$hoten."', email='".$email."', dress='".$dress."', tell='".$tell."' where id=".$id;   
                                 pdo_execute($sql);
                             }
-                            function checkuser($user)
+                            update_taikhoan($id,$user,$pass,$hoten,$email,$dress,$tell);
+                            $thongbao="Update thành công";
+                            
+                         function checkuser($user)
                             {
                                 $sql = "select * from taikhoan where user='" . $user . "'";
                                 $sp = pdo_query_one($sql);
                                 return $sp;
                             }
                             $_SESSION['user'] = checkuser($user);
-            
-                            // header('loaction: index.php?act=edit_name');
-                    }
-                    include "view/editName.php";
-                    break;
-                case 'edit_dress':
-                    if (isset($_POST['them']) && ($_POST['them'])) {
-                            $dress = $_POST['dress'];
-                            $id = $_POST['id'];
-            
-                            update_dress($id, $dress);
-                            $_SESSION['user'] = checkuser($user, $pass);
-                            header('Location:index.php?edit_dress');
-                    }
-                    include "view/editAddress.php";
-                    break;
+                        }
+                         include "view/edit_taikhoan.php";
+                         break;
             default: 
                 include "view/home.php";
                 break;
