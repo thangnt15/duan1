@@ -23,21 +23,23 @@
                 Cập nhật tài khoản
             </h1>
             <div class="form2">
-                <input type="text" placeholder="Tên tài khoản" name="user" value="<?=$user?>">
-
-                <input type="text" placeholder="Mật khẩu tài khoản" name="pass" value="<?=$pass?>">
-
-                <input type="text" placeholder="Họ tên tài khoản" required name="hoten"
-                    value="<?php if(isset($hoten)&&($hoten!="")) echo $hoten; ?>">
-
-                <input type="text" placeholder="Email tài khoản" required name="email"
-                    value="<?php if(isset($email)&&($email!="")) echo $email; ?>">
-
-                <input type="text" placeholder="Địa chỉ tài khoản" required name="dress"
-                    value="<?php if(isset($dress)&&($dress!="")) echo $dress; ?>">
-
-                <input type="text" placeholder="SDT tài khoản" required name="tell"
-                    value="<?php if(isset($tell)&&($tell!="")) echo $tell; ?>">
+                <div>Tên tài khoản</div>
+                <input type="text" name="user" value="<?=$user?>">
+                <br> <br>
+                <div>Mật khẩu tài khoản</div>
+                <input type="text" name="pass" value="<?=$pass?>">
+                <br> <br>
+                <div>Họ tên tài khoản</div>
+                <input type="text" required name="hoten" value="<?php if(isset($hoten)&&($hoten!="")) echo $hoten; ?>">
+                <br> <br>
+                <div>Email</div>
+                <input type="text" required name="email" value="<?php if(isset($email)&&($email!="")) echo $email; ?>">
+                <br> <br>
+                <div>Địa chỉ</div>
+                <input type="text" required name="dress" value="<?php if(isset($dress)&&($dress!="")) echo $dress; ?>">
+                <br> <br>
+                <div>Số điện thoại</div>
+                <input type="text" required name="tell" value="<?php if(isset($tell)&&($tell!="")) echo $tell; ?>">
 
                 <!-- <input type="text" placeholder="Vai trò" required name="vaitro"
                     value="<?php if(isset($vaitro)&&($vaitro!="")) echo $vaitro; ?>"> -->
