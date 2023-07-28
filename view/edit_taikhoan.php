@@ -55,7 +55,7 @@
                             </a></li>
                         <li><a href="./index.php">
                                 <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-                                <span class="text">Đăng xuất</span>
+                                <span class="text">Thoát</span>
                             </a></li>
 
                     </ul>
