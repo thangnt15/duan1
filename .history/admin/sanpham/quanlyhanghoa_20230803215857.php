@@ -32,7 +32,6 @@
 
 
         <table class="content-table">
-        <a href="index.php?act=addsp"><input type="button" value="Nhập thêm" style="margin-top: 10px;"></a>
             <thead>
                 <tr>
                     <th>Mã sản phẩm</th>
