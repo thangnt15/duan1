@@ -198,6 +198,29 @@
             include "taikhoan/quanlykhachhang.php";
             break;
 
+             // bình luận
+             case 'dsbl':
+                function loadall_binhluan($idpro)
+                {
+                    $sql = "SELECT * FROM binhluan where 1";
+                    if($idpro>0)
+                    $sql.=" AND idpro='".$idpro."'";
+                    $sql.=" order by id desc";
+                    $listbl = pdo_query($sql);
+                    return $listbl;
+                }
+                $listbinhluan = loadall_binhluan(0);
+                include "binhluan/list.php";
+                break;
+            case 'xoabl':
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    delete_binhluan($_GET['id']);
+                    }
+                $listbinhluan = loadall_binhluan(0);
+                include "binhluan/list.php";
+                break;
+    
+
             default:
                 include "home.php";
                 break;
