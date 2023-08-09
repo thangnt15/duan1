@@ -30,7 +30,7 @@ function drawChart() {
 ]);
 
   // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Thống kê sản phẩm theo danh mục', 'width':1100, 'height':800};
+  var options = {'title':'thống kê sản phẩm theo danh mục', 'width':1100, 'height':800};
 
   // Display the chart inside the <div> element with id="piechart"
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
