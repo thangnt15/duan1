@@ -10,23 +10,22 @@ if (!isset($_SESSION['name'])) {
 $luotxem= $_SESSION['name'];
 $up_luot_xem=up_luot_xem($luotxem,$id);
 ?>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./view/css/xyz.css">
-    <link href="//fonts.googleapis.com/css?family=Poppins:400,200,300,400,400i,500,600,600i,700,700i,800,900,900i">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./view/css/xyz.css">
+  <link href="//fonts.googleapis.com/css?family=Poppins:400,200,300,400,400i,500,600,600i,700,700i,800,900,900i">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
-    <title>Chi tiết sản phẩm</title>
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
+  <title>Chi tiết sản phẩm</title>
 </head>
 
 <body>
-    <?php
+  <?php
       extract($onesp);
       $img=$img_path.$img;
       echo '<div class="containerct">
@@ -57,7 +56,7 @@ $up_luot_xem=up_luot_xem($luotxem,$id);
               <h1 class="big">'.$name.'</h1>
               <span class="new">new</span>
             </div>
-            <div class="small"><span class="small">'.number_format($giamoi).' VNĐ</span><del class="smalll">'.number_format($giacu).' VNĐ</del></div>
+            <div class="small"><span class="small">'.number_format($giamoi).' VNĐ</span></div>
             <!-- <h3 class="small">120.000 VNĐ</h3> -->
           </div>
           <div class="description">
@@ -96,28 +95,20 @@ $up_luot_xem=up_luot_xem($luotxem,$id);
     </div>
     ';
   ?>
+  
+  <script>
+    
+  </script>
+  <script src="./view/js/chiTiet.js"></script>
+  <div class="row" >
+     <iframe src="binhluan/binhluanform.php?idsp=<?=$id?>" frameborder="0" width="100%" height="500px"></iframe>
+ </div>
 
-    <script>
+<div class="lienQuan">
+  <h2>Sản phẩm cùng loại</h2>
 
-    </script>
-    <script src="./view/js/chiTiet.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $("#binhluan").load("view/binhluan/binhluanform.php", {
-            idpro: <?=$id?>
-        });
-    });
-    </script>
-    <div class="row" id="binhluan">
-
-    </div>
-
-    <div class="lienQuan">
-        <h2>Sản phẩm cùng loại</h2>
-
-        <div class="img_product">
-            <?php
+  <div class="img_product">
+    <?php
       foreach ($sp_cung_loai as $sp_cung_loai) {
           extract($sp_cung_loai);
           $hinh=$img_path.$img;
@@ -141,7 +132,7 @@ $up_luot_xem=up_luot_xem($luotxem,$id);
             <?php
             echo '</div>'
             ?>
-            <?php
+        <?php
               echo '<div class="money">
               <p>'.number_format($giamoi).' VNĐ</p>
           </div>
@@ -149,13 +140,13 @@ $up_luot_xem=up_luot_xem($luotxem,$id);
             <a href="'.$linksp.'">Xem chi tiết</a>
         </div>'
         ?>
-            <?php
+        <?php
                 echo ' </div>';}
   ?>
 
-        </div>
+</div>
 
-    </div>
+</div>
 </body>
 
 </html>
