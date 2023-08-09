@@ -17,11 +17,11 @@
             <table border="1px">
                 <tr>
                     <th>Mã danh mục</th>
-                    <th>tên danh mục</th>
-                    <th>số lượng</th>
-                    <th>giá cao nhất</th>
-                    <th>giá thấp nhất</th>
-                    <th>giá trung bình</th>
+                    <th>Tên danh mục</th>
+                    <th>Số lượng</th>
+                    <th>Giá cao nhất</th>
+                    <th>Giá thấp nhất</th>
+                    <th>Giá trung bình</th>
                     
                 </tr>
                 <?php
