@@ -1,9 +1,10 @@
 <?php
     include "../model/pdo.php";
+    include "header.php";
     include "../model/danhmuc.php";
     include "../model/sanpham.php";
     include "../model/taikhoan.php";
-    include "header.php";
+    include "model/thongke.php";
 
     if(isset($_GET['act'])) {
         $act=$_GET['act'];
@@ -198,6 +199,16 @@
             include "taikhoan/quanlykhachhang.php";
             break;
 
+            //thống kê
+            case 'thongke':
+                $listthongke=loadall_thongke();
+                include "thongke/list.php";
+                break;
+            case 'bieudo':
+                $listthongke=loadall_thongke();
+                include "thongke/bieudo.php";
+                break;
+                
             default:
                 include "home.php";
                 break;
