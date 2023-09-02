@@ -199,7 +199,7 @@
             include "taikhoan/quanlykhachhang.php";
             break;
 
-
+ HEAD
             //thống kê
             case 'thongke':
                 $listthongke=loadall_thongke();
@@ -210,8 +210,8 @@
                 include "thongke/bieudo.php";
                 break;
                 
-
-             // bình luận
+===
+        ====     // bình luận
              case 'dsbl':
                 function loadall_binhluan($idpro)
                 {
@@ -234,7 +234,7 @@
                 break;
     
 
-
+>>>>>>> 4096e3c3f4a6fc2df2c154550e3a9c51676f4bb1
             default:
                 include "home.php";
                 break;

@@ -133,6 +133,8 @@
                         }
                          include "view/edit_taikhoan.php";
                          break;
+
+                        
             default: 
                 include "view/home.php";
                 break;

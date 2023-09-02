@@ -1,0 +1,17 @@
+.form{
+    display: grid;
+}
+input{
+    background-color: white;
+    position: relative;
+    bottom: 200px;
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    color: #4e73df;
+    border: 2px solid #4e73df;
+}
+input:hover{
+    background-color: #4e73df;
+    color: white;
+}

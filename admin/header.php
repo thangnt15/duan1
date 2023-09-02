@@ -21,6 +21,7 @@
         <div class="control-left">
             <a href="index.php" style="text-decoration: none; font-size: 25px; color: #c7fa7c; font-weight: bold; line-height: 80px; width: 200px;">
                 Bảng điều khiển
+            
             </a>
             <div class="line">
 
@@ -38,6 +39,7 @@
                     <a href="index.php?act=dsdh">Danh sách đơn hàng </a>
                     <a href="index.php?act=dsbl">Quản lý bình luận </a>
                     <a href="index.php?act=thongke">Quản lý thống kê </a>
+                    
                 </div>
                 <div class="line">
 
