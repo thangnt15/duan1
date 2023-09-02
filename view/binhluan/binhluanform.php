@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/xyz.css">
     <style>
     .binhluan table {
         width: 90%;
@@ -41,24 +41,9 @@
         margin: 20px 0px;
     }
 
-    .comment {
-        margin: 40px;
-    }
-
-    .submitbl {
-        height: 35px;
-        border: 2px solid gray;
-    }
-
-    .submitbl:hover {
-        color: #1b00fb;
-        cursor: pointer;
-    }
-
-    .inputbl {
-        border: 2px solid gray;
-        height: 35px;
-        width: 200px;
+    .h1 {
+        color: red;
+        font-size: 20px;
     }
     </style>
 </head>
@@ -74,13 +59,22 @@
             <ul>
                 <table>
                     <?php
-            echo "Comment content here: ";
+            // echo "Comment content here: ";
             foreach ($dsbl as $bl) {
                 extract($bl);
-                echo ' <tr> <td>'.$noidung.'</td>';
-                echo '<td>'.$iduser.'</td>';
-                echo '<td>'.$ngaybinhluan.'</td> </tr>';
+                echo '<tr>
+                          <td>'.$noidung.'</td>';
+            
+                if ($username == '') {
+                    echo '<td>khách</td>';
+                } else {
+                    echo '<td>'.$username.'</td>';
+                }
+            
+                echo '<td>'.$ngaybinhluan.'</td>
+                      </tr>';
             }
+            
             ?>
                 </table>
             </ul>
@@ -90,10 +84,15 @@
             <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
                 <input type="hidden" name="idpro" value="<?=$idpro?>">
 
-                <div class="comment">
-                    <input class="inputbl" type="text" name="noidung">
-                    <input class="submitbl" type="submit" name="guibinhluan" value="Comment">
-                </div>
+                <?php
+        if (isset($_SESSION['user'])) {
+            echo '<input type="text" name="noidung" class="question" id="nme" required autocomplete="off" />
+          <label for="msg"><span>Bình luận về sản phẩm</span></label>
+          <input type="submit" name="guibinhluan" value="Gửi" />';
+        } else {
+            echo '<h1 class="h1">Bạn hãy đăng nhập để bình luận</h1>';
+        }
+        ?>
             </form>
         </div>
 
