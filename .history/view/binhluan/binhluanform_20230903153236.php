@@ -26,7 +26,7 @@
     }
 
     .binhluan table td:nth-child(1) {
-        width: 55%;
+        width: 50%;
     }
 
     .binhluan table td:nth-child(2) {

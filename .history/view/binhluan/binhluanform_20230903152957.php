@@ -22,11 +22,11 @@
     .binhluan table {
         width: 90%;
         margin-left: 5%;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .binhluan table td:nth-child(1) {
-        width: 55%;
+        width: 50%;
     }
 
     .binhluan table td:nth-child(2) {

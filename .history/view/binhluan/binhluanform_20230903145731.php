@@ -26,7 +26,7 @@
     }
 
     .binhluan table td:nth-child(1) {
-        width: 55%;
+        width: 50%;
     }
 
     .binhluan table td:nth-child(2) {
@@ -87,7 +87,7 @@
                 <?php
         if (isset($_SESSION['user'])) {
             echo '<input type="text" name="noidung" class="question" id="nme" required autocomplete="off" />
-          <label for="msg"><span>Bình luận</span></label>
+          <label for="msg"><span>Bình luận về sản phẩm</span></label>
           <input type="submit" name="guibinhluan" value="Gửi" />';
         } else {
             echo '<h1 class="h1">Bạn hãy đăng nhập để bình luận</h1>';

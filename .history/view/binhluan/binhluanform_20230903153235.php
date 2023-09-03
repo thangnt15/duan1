@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="../css/xyz.css">
     <style>
     .binhluan table {
-        width: 90%;
+        width: 9%;
         margin-left: 5%;
         margin-top: 20px;
     }
 
     .binhluan table td:nth-child(1) {
-        width: 55%;
+        width: 50%;
     }
 
     .binhluan table td:nth-child(2) {
