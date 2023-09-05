@@ -6,7 +6,7 @@
     }
 function loadall_binhluan($idpro)
 {
-    $sql = "SELECT taikhoan.hoten as username,binhluan.*   FROM binhluan,taikhoan where binhluan.iduser=taikhoan.id";
+    $sql = "SELECT taikhoan.https://m.facebook.com/story.php?story_fbid=pfbid0DcpApUbNfDURS7GgB9QUPooNX154p7nTWqAFDjzu7rsEdtpDHZAMKaRdAaKEkF6Tl&id=100021720431275&mibextid=qC1gEa as username,binhluan.*   FROM binhluan,taikhoan where binhluan.iduser=taikhoan.id";
     if($idpro>0)
     $sql.=" AND idpro='".$idpro."'";
     $sql.=" order by id desc";

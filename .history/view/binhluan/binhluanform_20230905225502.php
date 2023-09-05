@@ -25,7 +25,7 @@
         margin-top: 20px;
     }
 
-    .binhluan table td:nth-child(1) { 
+    .binhluan table td:nth-child(1) { 123
         width: 55%;
     }
 

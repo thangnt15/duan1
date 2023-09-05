@@ -1,6 +1,0 @@
-<?
-
-    include "header.php";
-    in
-
-?>

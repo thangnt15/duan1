@@ -6,7 +6,7 @@
     }
 function loadall_binhluan($idpro)
 {
-    $sql = "SELECT taikhoan.hoten as username,binhluan.*   FROM binhluan,taikhoan where binhluan.iduser=taikhoan.id";
+    $sql = "SELECT taikhoan.user as username,binhluan.*   FROM binhluan,taikhoan where binhluan.iduser=taikhoan.id";
     if($idpro>0)
     $sql.=" AND idpro='".$idpro."'";
     $sql.=" order by id desc";
