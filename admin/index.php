@@ -4,7 +4,7 @@
     include "../model/danhmuc.php";
     include "../model/sanpham.php";
     include "../model/taikhoan.php";
-    include "model/thongke.php";
+    include "../model/thongke.php";
 
     if(isset($_GET['act'])) {
         $act=$_GET['act'];
@@ -204,7 +204,7 @@
             
             case 'thongke':
                 $listthongke=loadall_thongke();
-                include "thongke/list.php";
+                include "thongke/listsp.php";
                 break;
             case 'bieudo':
                 $listthongke=loadall_thongke();
@@ -227,10 +227,25 @@
                 include "binhluan/list.php";
                 break;
             case 'xoabl':
+                function delete_binhluan($id)
+                    {
+                    $sql = "DELETE FROM binhluan WHERE id =" . $id;
+                    pdo_execute($sql);
+                    };
+              function loadall_binhluan($idpro)
+                {
+                $sql = "SELECT taikhoan.user as username,binhluan.*   FROM binhluan,taikhoan where binhluan.iduser=taikhoan.id";
+                if($idpro>0)
+                $sql.=" AND idpro='".$idpro."'";
+                $sql.=" order by id desc";
+                $listbl = pdo_query($sql);
+                return $listbl;
+                };
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     delete_binhluan($_GET['id']);
                     }
                 $listbinhluan = loadall_binhluan(0);
+                
                 include "binhluan/list.php";
                 break;
     

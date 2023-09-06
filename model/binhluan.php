@@ -6,7 +6,7 @@
     }
 function loadall_binhluan($idpro)
 {
-    $sql = "SELECT * FROM binhluan where 1";
+    $sql = "SELECT taikhoan.hoten as username,binhluan.*   FROM binhluan,taikhoan where binhluan.iduser=taikhoan.id";
     if($idpro>0)
     $sql.=" AND idpro='".$idpro."'";
     $sql.=" order by id desc";
@@ -18,4 +18,5 @@ function delete_binhluan($id)
     $sql = "DELETE FROM binhluan WHERE id =" . $id;
     pdo_execute($sql);
 }
+
 ?>
