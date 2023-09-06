@@ -40,10 +40,6 @@
                 }
                 include "danhmuc/sualoaihang.php";
                 break;
-                case 'listbill':
-                    $listbill = loadall_bill(0);
-                    include "bill/listbill.php";
-                    break;
 
                 case 'xoabill':
                     if (isset($_GET['id']) && ($_GET['id'] > 0)) {

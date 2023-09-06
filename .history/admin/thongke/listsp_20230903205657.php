@@ -17,7 +17,7 @@
         <a href="index.php?act=thongkesp">Sản phẩm</a>
         </div>
         <div class="tkds">
-        <!-- <a href="index.php?act=thongkeds">Doanh thu</a> -->
+        <a href="index.php?act=thongkeds">Doanh thu</a>
         </div>
         
     </div>

@@ -5,7 +5,6 @@
     include "../model/sanpham.php";
     include "../model/taikhoan.php";
     include "../model/thongke.php";
-    include "../model/cart.php";
 
     if(isset($_GET['act'])) {
         $act=$_GET['act'];
@@ -40,42 +39,6 @@
                 }
                 include "danhmuc/sualoaihang.php";
                 break;
-                case 'listbill':
-                    $listbill = loadall_bill(0);
-                    include "bill/listbill.php";
-                    break;
-
-                case 'xoabill':
-                    if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                        delete_bill($_GET['id']);
-                    }
-                    $listbill = loadall_bill("", 0);
-                    include "bill/listbill.php";
-                    break;
-                    // case 'suabill':
-                    //     if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                    //         $sql = "select * from bill where id=" . $_GET['id'];
-                    //         $suabill = loadone_bill("", 0);
-                    //     }
-                    //     include "bill/listbill.php";
-                    //     break;
-                    // ... Các trường hợp khác ở đây ...
-        
-                    // Trường hợp sửa đơn hàng
-                case 'suabill':
-                    if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                        $idbill = $_GET['id'];
-                        $bill = loadone_bill($idbill); // Load thông tin đơn hàng
-                        if ($bill) {
-                            // Hiển thị trang cập nhật trạng thái đơn hàng
-                            include "bill/suabill.php";
-                        } else {
-                            echo "Đơn hàng không tồn tại.";
-                        }
-                    } else {
-                        echo "ID đơn hàng không hợp lệ.";
-                    }
-                    break;
 
             case 'updatedm':
                 if(isset($_POST['update'])&&($_POST['update'])) {

@@ -3,11 +3,10 @@
     include "model/pdo.php";
     include "model/sanpham.php";
     include "model/danhmuc.php";
-    include "view/header.php";
     include "model/taikhoan.php";
     include "model/cart.php";
     include "global.php";
-    
+    include "view/header.php";
 
     
     $spnew=loadall_sanpham_home();

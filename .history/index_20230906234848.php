@@ -1,20 +1,17 @@
 <?php 
-    ob_start();
     include "model/pdo.php";
     include "model/sanpham.php";
     include "model/danhmuc.php";
-    include "view/header.php";
     include "model/taikhoan.php";
     include "model/cart.php";
     include "global.php";
-    
+    include "view/header.php";
 
     
-    $spnew=loadall_sanpham_home();
-    $dsdm=loadall_danhmuc();
-    $dstop = loadall_sanpham_top();
+
 
     if((isset($_GET['act']))&&($_GET['act']!="")) {
+        
         $act=$_GET['act'];
         switch ($act) {
             case 'gioithieu':

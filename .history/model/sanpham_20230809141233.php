@@ -66,10 +66,6 @@ function load_ten_dm($iddm){
         return "";
     }
 }
-function up_so_luong($soluong,$id){
-    $sql ="update sanpham set soluong='".$soluong."' where id=".$id;
-    pdo_execute($sql);
-}
 //sp cung loai
 function load_sanpham_cungloai($id,$iddm){
     $sql = "select * from sanpham where iddm=".$iddm." AND id <> ".$id;

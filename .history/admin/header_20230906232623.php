@@ -11,17 +11,17 @@
     <title>Document</title>
 </head>
 <style>
-a {
-    display: block;
-}
+    a {
+        display: block;
+    }
 </style>
 
 <body>
     <div id="control">
         <div class="control-left">
-            <a href="index.php"
-                style="text-decoration: none; font-size: 25px; color: #c7fa7c; font-weight: bold; line-height: 80px; width: 200px;">
+            <a href="index.php" style="text-decoration: none; font-size: 25px; color: #c7fa7c; font-weight: bold; line-height: 80px; width: 200px;">
                 Bảng điều khiển
+            
             </a>
             <div class="line">
 
@@ -39,6 +39,7 @@ a {
                     <a href="index.php?act=listbill">Danh sách đơn hàng </a>
                     <a href="index.php?act=dsbl">Quản lý bình luận </a>
                     <a href="index.php?act=thongke">Quản lý thống kê </a>
+                    
                 </div>
                 <div class="line">
 
