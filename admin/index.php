@@ -18,7 +18,7 @@
                 }
                 include "danhmuc/add.php";
                 break;
-
+            }
             case 'qldm':
                 $sql="select * from danhmuc order by id desc";
                 $listdanhmuc=loadall_danhmuc();
@@ -199,8 +199,9 @@
             include "taikhoan/quanlykhachhang.php";
             break;
 
-<<<<<<< HEAD
+
             //thống kê
+            
             case 'thongke':
                 $listthongke=loadall_thongke();
                 include "thongke/list.php";
@@ -210,7 +211,7 @@
                 include "thongke/bieudo.php";
                 break;
                 
-=======
+
              // bình luận
              case 'dsbl':
                 function loadall_binhluan($idpro)
@@ -234,14 +235,15 @@
                 break;
     
 
->>>>>>> 4096e3c3f4a6fc2df2c154550e3a9c51676f4bb1
+
             default:
                 include "home.php";
                 break;
         }
-    } else {
+     else {
         include "home.php";
     }
+
 
     include "footer.php"
 
