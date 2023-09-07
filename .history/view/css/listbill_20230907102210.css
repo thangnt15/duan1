@@ -1,0 +1,67 @@
+table {
+    border-collapse: collapse;
+    margin: 45px 0px;
+    /* margin-left: 1px; */
+    /* font-size: 0.9em; */
+    width: 1150px;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+
+}
+.content-table table tr {
+    background-color: #4e73df;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .content-table table th {
+    color: white;
+}
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid  #4e73df;
+}
+#edit {
+    border-radius: 5px;
+    padding: 2px 12px;
+    border:  1px solid #4e73df;
+  }
+  #del {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 2px 12px;
+    border:  1px solid #4e73df;
+  }
+  #edit:hover {
+    border: none;
+    text-decoration: none;
+    background: #009879;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #009879,
+                0 0 4px #009879,
+                0 0 6px #009879,
+                0 0 8px #009879;
+  }
+  #del:hover {
+    border: none;
+    text-decoration: none;
+    background: rgb(212, 40, 9);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(212, 40, 9),
+                0 0 4px rgb(212, 40, 9),
+                0 0 6px rgb(212, 40, 9),
+                0 0 8px rgb(212, 40, 9);
+  }
