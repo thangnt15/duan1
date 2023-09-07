@@ -105,7 +105,7 @@
                             $isset = false;
                             $sanpham = loadone_sanpham($_POST['id']);
                             if ($sanpham['soluong'] != 0) {
-                                foreach ($_SESSION['mycart'] as $key => $value) {
+                                foreach ($_SESSION['mycart' as $key => $value) {
                                     if ($value[0] == $_POST['id']) {
                                         $isset = true;
                                         $value[4]++;

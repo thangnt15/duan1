@@ -101,7 +101,7 @@
                     break;
             
             case 'addtocart':
-                    if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+                        if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
                             $isset = false;
                             $sanpham = loadone_sanpham($_POST['id']);
                             if ($sanpham['soluong'] != 0) {
